@@ -3,4 +3,4 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-export default nextConfig // needs to be module here
+module.exports = nextConfig
