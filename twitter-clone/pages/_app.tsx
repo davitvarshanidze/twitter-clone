@@ -9,7 +9,7 @@ import RegisterModal from '@/components/modals/RegisterModal'
 import '@/styles/globals.css'
 import EditModal from '@/components/modals/EditModal';
 
-const {data:session} = useSession();
+// const {data:session} = useSession();
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
