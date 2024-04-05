@@ -11,6 +11,8 @@ import { PrismaAdapter } from "@next-auth/prisma-adapter";
 //     res.setHeader('X-Authenticated-User', String(session?.user?.email))
 //   }
 
+
+
 import prisma from "@/libs/prismadb";
 
 export const authOptions: AuthOptions = {
