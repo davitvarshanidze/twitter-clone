@@ -7,9 +7,9 @@ import { PrismaAdapter } from "@next-auth/prisma-adapter";
 
 // export async function addUserHeader(req, res) {
 
-//     const session = await unstable_getServerSession({ req });
-//     res.setHeader('X-Authenticated-User', String(session?.user?.email))
-//   }
+// const session = await unstable_getServerSession({ req });
+// res.setHeader('X-Authenticated-User', String(session?.user?.email))
+// }
 
 import prisma from "@/libs/prismadb";
 
@@ -51,13 +51,13 @@ export const authOptions: AuthOptions = {
     }),
   ],
   debug: process.env.NODE_ENV === "development",
-  session: {
+  session: { // jwt added
     strategy: "jwt",
   },
   jwt: {
-    secret: process.env.NEXTAUTH_JWT_SECRET,
+    secret: process.env.NEXT_AUTH_JWT_SECRET,
   },
-  secret: process.env.NEXTAUTH_SECRET,
+  secret: process.env.NEXT_AUTH_SECRET,
 };
 
 export default NextAuth(authOptions);
