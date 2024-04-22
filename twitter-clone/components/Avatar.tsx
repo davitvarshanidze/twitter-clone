@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import { useCallback } from "react";
 
 import useUser from "@/hooks/useUser";
-// av
 interface AvatarProps {
   userId: string;
   isLarge?: boolean;
