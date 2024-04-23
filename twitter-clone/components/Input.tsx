@@ -6,6 +6,7 @@ interface InputProps {
   onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
   label?: string;
 }
+//
 
 const Input: React.FC<InputProps> = ({ placeholder, value, type = "text", onChange, disabled, label }) => {
   return (
